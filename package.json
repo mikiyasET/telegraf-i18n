@@ -50,7 +50,7 @@
 		"xo": "^0.42.0"
 	},
 	"files": [
-		"dist/source",
+		"source",
 		"!*.test.*"
 	],
 	"main": "dist/source",
