@@ -22,6 +22,7 @@
 	},
 	"author": "Vitaly Domnikov <oss@vitaly.codes>",
 	"scripts": {
+    "prepare": "npm run --silent build",
 		"build": "del-cli dist && tsc",
 		"prepack": "npm run build",
 		"start": "ts-node examples/example-bot.ts",
@@ -50,7 +51,7 @@
 		"xo": "^0.42.0"
 	},
 	"files": [
-		"source",
+		"dist/source",
 		"!*.test.*"
 	],
 	"main": "dist/source",
